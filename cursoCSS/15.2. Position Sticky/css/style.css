@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+img{
+    width: 100%; 
+    display: block;
+}
+.header{
+    text-align: center;
+    background-color: lightskyblue;
+    color: orangered;
+    /*position: sticky;  No funciona el bottom, top, left y right para mover, no es como FIXED */
+    /*top: 0;  Este funciona como scroll porque le decimos que al bajar en la web, cuando llegue top a 0, baje con nosotros */
+    /*height: 100px;*/
+}
+/* .menu{ No funciona porque no tiene un alto declarado, hay que hacerlo para que comience a moverse con el scroll 
+    position: sticky; 
+    top: 0; x|
+} */
+article{
+    outline: 3px solid red;
+}
+.article_title{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    margin: 0;
+}
+ 

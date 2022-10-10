@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 70px;/* Espacio de separación entre el MENU y el CONTENIDO */
+}
+.header{
+    background-color: lightskyblue;
+    padding: 25px 0;
+    color: orangered;
+    text-align: center;
+    position: fixed; /* Funciona igual que absolute, quita los espacios. Se va con el html. Genera que se quede y se muvea con el scroll */
+    top: 0;
+    width: 100%;/* Relleno de espacio */
+}

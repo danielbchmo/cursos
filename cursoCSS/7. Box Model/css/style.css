@@ -1,0 +1,174 @@
+/*
+    - Margin
+        Es la propuiedad que nos permite generar esapcio entre elementos.
+        Es un shothand (propiedad abreviada) que controla los 4 lados
+        posibles a los que se da margen.
+            margin-top -> Margen superior
+            margin-right -> Margen derecho
+            margin-bottom -> Margen inferior
+            margin-left -> Margen izquierdo
+
+        Admite hasta 4 valores que van en el orden de las agujas del reloj.
+            4 valores -> margin:top right bottom left;
+            3 valores -> margin:top lerft/right bottom;
+            2 valores -> margin:top/bottom left/right;
+            1 valor -> margin:top/right/bottom/left;
+        
+    RECORRE EL ELEMENTO HACIA DONDE INDIQUES.
+
+    - Padding
+        Es la propiedad que nos permite generar espacio interno entre el borde
+        y la caja. Es un shorthand (propiedad abreviada) que controla los 4 lados 
+        posibles a los que dar padding.
+            padding-top: paddgin superior.
+            padding-right: padding derecho.
+            padding-botton: padding inferior.
+            padding-left: padding izquierdo.
+
+        Admite hasta 4 valores que van en el orden de las agujas del reloj.
+            4 valores -> padding:top right bottom left;
+            3 valores -> padding:top lerft/right bottom;
+            2 valores -> padding:top/bottom left/right;
+            1 valor -> padding:top/right/bottom/left;
+
+    HACE CRECER EL ELEMENTO HACIE DONDE INDIQUES.
+
+    - Border:
+        Es la propiedad que permite modificar el borde de la caja. Es
+        un shorthand (propiedad abreviada) que agrupa 3 propiedades:
+            border-widht: ancho del borde
+
+                border-top-widht
+                border-right-widht
+                border-bottom-width
+                border-left-width
+
+            border-style: estilo del borde
+
+                border-top-style
+                border-right-style
+                border-bottom-style
+                border-left-style
+
+                    Listado de valores para style:
+                        none
+                        hidden
+                        dotted -> Circulos
+                        dashed -> Rectangulos
+                        solid -> Solido
+                        double -> Borde doble
+                        groove -> Sombra 3d
+                        ridge -> Sombra 3d
+                        inset -> Sombra
+                        outset -> Sombra invertida
+
+            border-color: color del borde
+
+                border-top-color
+                border-right-color
+                border-bottom-color
+                border-left-color
+
+    - Box Sizing:
+        Es la propiedad que nos permite controlar el calculo que hace
+        el navegador a la hora de modificar las propiedades content, padding y border.
+        Los 2 valores que podemos darle son:
+            content-box -> Valor por defecto
+            border-box -> Calculo de tamaño del elemento incluyendo
+            el padding y el border.
+*/  
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0; /* Necesario colocar para abarcar todo el margen, por defecto el navegador
+    tiene 8px predeterminados*/
+}
+
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    /* margin: 100px 50px 10px 200px; */
+    margin-right: auto; /* coloca hasta el lado indicado de forma automatica 
+    Es necesario tener un ancho declarado.*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px; /*Crece hacia abajo y arriba*/
+    padding-bottom: 100px;
+    padding: 50px 20px 50px 20px;
+}
+ .block2{
+     background-color: silver;
+     width: 200px;
+     height: 200px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 20px;
+     /* box-sizing: border-box; <- Es comun ponerlo en un selector universal*/
+     border: 5px double red ;
+ }
+.inline{
+    background-color: lightcoral;
+    color: inherit;
+   /* width: 200px; No funciona, porque en un INLINE no hay medidas*/
+    /* height: 200px; Las medidas las ejerce el contenido que haya*/
+    margin-left: 100px;
+    padding-left: 100px; 
+}
+
+.title{
+    background-color: blue;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    background-color: tomato;
+    height: 50px;
+}
+
+.buttons{
+    background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+.button{ 
+    margin-left: 150px;
+    padding: 25px 50px;
+    border: 20px solid red; 
+    /* Es lo mismo que lo de arriba pero abreviado
+        border-width: 20px;
+        border-style: solid;
+        border-color: red;
+    */
+    border-top-color: #333;
+    border-right-color: aqua;
+    border-bottom-color: beige;
+    border-left-color: steelblue;
+    border-style: dotted; /*bordes con puntos*/
+
+}
+/* 
+    MALAS PRACTICAS
+
+*{
+    margin: 0; Quita margenes para volver a restablecerlos tu mismo.
+    padding: 0;
+}
+
+.title{
+    background-color: blue;
+    width: 160px;
+    margin-top: 100px;
+    margin: 0 auto; <- Centra, pero es la forma incorrecta porque quita diseños anteriores.
+    
+    margin-left: auto; <- Forma correcta de centrar.
+    margin-right: auto;
+}
+*/

@@ -1,0 +1,108 @@
+/* SELECTORES */
+
+/* Selectores Simples
+
+    Selectores Elementales
+       - Selectores Universal -> *
+       - Selectores de tipo o etiqueta -> Nombre de la etiqueta
+
+    Selectores Atributo
+        - id -> # id del elemento
+        - clase -> clase del elemento
+        - otro atributos.
+            [atributo]
+            [atributo=valor]
+            [atributo^=valor] Comprobar si el atrubito empieza por ese valor
+            [atrubuto*=valor] Seleccionar el valor que conincida con *
+            [atributo$=valor] Seleccionar el valor si termina con la palabra
+            [atributp|=valor]  Por si el idioma esta diferente
+
+Selectores Compuestos
+
+    Selectores Agrupados
+        , -> varios atributos separados con un coma, evita repeticiones
+    
+    Selectores Combinadores
+        Se utiliza el div, html, o la etiqueta de división y solo da estilo a lo que elegiste a pesar de que haya 
+        la misma etiqueta en otros elementos.
+
+        - Selector Descendiente
+        - Selector Hermano Siguiente "+"
+        - Selector de hermanos siguientes "~"
+        - Selecto Hijo Directo > -> Slecciona SOLO los hijos directos
+
+    Pseudoclases - Pseudoelementos 
+        selector descendiente
+*/
+
+/*body{
+    background-color: coral;
+}
+    Selectores Elementales
+*{
+    background-color: teal;
+}
+
+h1{
+    background-color: thistle;
+}
+
+p{
+    background-color: blue;
+}
+    Selectores de Atributo
+#title{
+    background-color: blue;
+}
+
+.title2{
+    background-color: chartreuse;
+}
+
+[href] {
+  background-color: cyan;
+}
+[href="https://google.com"]
+{
+  background-color: red;
+}
+
+[href^="color"] {
+  background-color: royalblue;
+}
+
+[href*="modo"] {
+  background-color: green;
+}
+
+[href$="rojo"] {
+  background-color: goldenrod;
+}
+
+[lang|="en"] {
+  background-color: magenta;
+}*/
+    /* Selectores Compuestos 
+    - Agrupados
+
+.text, .text2, .text3{
+    background-color: steelblue;
+}
+
+    - Combinados
+
+div .title3{
+    background-color: teal;
+}
+
+.title3 + .text2{
+    background-color: tomato;
+}
+
+.text2 ~ p{
+    background-color: teal;
+}*/
+
+.container > p{
+    background-color: thistle;
+}

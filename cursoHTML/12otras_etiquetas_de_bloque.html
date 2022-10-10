@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otras Etiquetas de Bloque</title>
+</head>
+<!--
+    - address -> Aporta información de contacto para el "article" más cercano
+    o para todo el body.
+
+    - blockquote -> Marca las citas a otros autores o documentos. Se puede incluir
+    el atributo de "cite" para poner un enlace al documento original o fuente.
+
+    - pre -> Funciona para tener un codigo preformateado que necesita ser representado
+    igual que se escribió.
+
+    - div -> Se usa como división del documento, es un contenedor generico que se usa para
+    dar estilo a través de CSS o para usar algo denominaod "delegación de eventos" en 
+    JavaScript.
+
+    - hr -> horizontal rule: le dice al navegador que vamos a cambiar.
+-->
+<body>
+    <address>
+        Tony Stark <br> <!--Salto o Enter-->
+        Malibu 10880 <br>
+        90625 <br>
+        California
+    </address>
+
+    <blockquote cite="https://www.youtube.com/watch?v=vz4z0RLcAyk&t=11032s"> <!--No es un link-->
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore repellendus laboriosam autem magni perferendis possimus quas sequi voluptate iusto libero reiciendis, voluptatibus perspiciatis necessitatibus, quam minima doloribus illo delectus dolores?
+        </p>
+    </blockquote>
+
+    <pre> <!--Escritura exactamente igual, se mostrará de la misma forma en como se escribe-->
+        Función Pre
+        Hola,
+        ¿Qué tal?
+    </pre>
+
+    <div id="Usuario_1"> <!--Solo es para separar contenido, no es ninguna función-->
+        <h2>Nombre</h2>
+        <p>Email</p>
+        <p>Descripción</p>
+    </div>
+    <div id="Usuario_2">
+        <h2>Nombre</h2>
+        <p>Email</p>
+        <p>Descripción</p>  
+    </div>
+
+    <hr> <!--Su función es motrar una línea que separa temas y unidades-->
+</body>
+</html>

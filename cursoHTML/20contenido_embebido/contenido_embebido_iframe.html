@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Embebido IFRAME</title>
+
+    <style> 
+        img, iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<!--
+    iframe -> es utilizado para colocar videos o información directamente de un sitio web.
+    Este es parecido a un enlace, con la diferencia que pasa la información sin necesidad de 
+    crearla tu mismo, sino que se pasa como tal del sitio.
+
+    Para colocarla, es necesario dar clic en compartir (video, info, etc) y la opción de INSERTAR,
+    creara un <iframe> automatico el cual solo copearas en tu HTML.
+-->
+<body><!--Video de Youtube-->
+    <h1>Contenido Embebido</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vz4z0RLcAyk"></iframe>
+
+    <h2>Etiqueta Figure</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa accusamus dolores quos eius, quam ut? Ullam veritatis quo quaerat explicabo. Fuga at perferendis eius? Ullam quae facere maiores quasi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa accusamus dolores quos eius, quam ut? Ullam veritatis quo quaerat explicabo. Fuga at perferendis eius? Ullam quae facere maiores quasi.</p>
+
+    <figure>
+        <img src="
+        https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/purina-10-datos-curiosos-sobre-los-gatos.png?itok=88pMyzkl"
+        alt="Gato">
+        <figcaption>Gato Semitapado</figcaption>
+    </figure>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fugit laudantium perferendis temporibus, nihil, ipsam suscipit magni accusantium minima voluptas sapiente molestias repudiandae et incidunt sint vitae cumque odio. Dicta.</p>
+</body>
+</html>

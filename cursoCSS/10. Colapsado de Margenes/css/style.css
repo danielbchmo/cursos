@@ -1,0 +1,52 @@
+/*
+    Los margenes verticales colapsan. 
+    Significa que al agregarle, por ejemplo, a mi box1 20px inferiores
+    y a mi box2 le agrego 30px superiores, no se separaran 50px, sino que 
+    se tomaran los 20px ya existentes y se le sumara lo faltante para llegar a 30px.
+*/
+
+*{
+    margin: 0;
+}
+body{
+    background-color: #333;
+    color: #fff;
+}
+.header{ /*El colapsado ocurre cuando queremos mover las letras del titulo*/
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /* overflow: hidden; 
+    padding-top: 0.1px; Estas son las soluciones, y no importa la cant de px.
+    */border-top: 0.1px solid lightcoral;
+}
+.title{
+    margin: 0;
+    margin-top: 30px;
+}
+.box1, .box2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+}
+.box2{
+    margin-top: 30px;
+}
+/*
+    La solución es mover las cajas solo con bottom, y no mezclarlo con top
+    y así mover hacia abajo los detalles.
+
+.box1, .box2{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+}
+.box{
+    margin-bottom: 30px;
+}
+*/

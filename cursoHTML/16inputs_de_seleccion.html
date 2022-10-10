@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs de Seleccion</title>
+</head>
+<!--
+    - radio -> Permite seleccionar una unica opción de una lista de 
+    opciones relacionadas.
+
+    - checkbox -> Permite seleccionar varias opciones de una lista de 
+    opciones relacionadas
+
+    - select -> Crea una lista de opciones donde podemos seleccionar
+    una o varias opciones.
+
+    Cada opcion ira dentro de una etiqueta <option></option>
+
+    Si tenemos muchas opciones podemos ordenarlas por categorias
+    a traves de la etiqueta <optgroup> con el atributo label para nombrar
+    la categoria
+-->
+<body>
+    <h1>Elementos seleccionables</h1>
+    <form>
+        <h2>Género</h2>
+        <h3>Una opción (Radio)</h3>
+            <label>Masculino
+                <input type="radio" name="gender" value="Masculino" checked>
+            </label>
+            <label>Femenino
+                <input type="radio" name="gender" value="Femenino">
+            </label>
+            <label>Desconocido
+                <input type="radio" name="gender" value="Desconocido">
+            </label>
+
+
+            <h2>Lenguajes que Conoces</h2>
+            <h3>Varias Opciones (Checkbox)</h3>
+            <label>
+                HTML
+                <input type="checkbox" name="languages " value="html">
+            </label>
+            <label>
+                CSS
+                <input type="checkbox" name="languages " value="css">
+            </label>
+            <label>
+                JavaScript
+                <input type="checkbox" name="languages " value="javascript">
+            </label>
+
+
+        <h3>Seleccion (Select)</h3>
+        <select name="lenguajes" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+
+
+        <h2>ELEMENTO SELECT AVANZADO</h2>
+        <select name="mascotas">
+            <optgroup label="4 patas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+            </optgroup>
+            <optgroup label="aves">
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="otros">
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarantula</option>
+            </optgroup>
+        </select><br>
+        <h3>DATALIST</h3>
+        <input type="list" list="pets">
+            <datalist id="pets">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarantula</option>
+            </datalist>
+    </form>
+</body>
+</html>

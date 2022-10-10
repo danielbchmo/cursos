@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        range{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<!--
+    input type:
+        - button
+        - color
+        - date -> introduce fecha
+        - datetime -> obsoleto
+        - datetime-local -> fecha y hora, no funciona en Firefox
+        - email
+        - hidden -> campo oculto, puede contener valor pero no se mostrara
+        - month
+        - password
+        - range -> Establece un rango
+        - reset -> Resetear un formulario
+        - search -> barras de busqueda
+        - submit -> enviar un formulario
+        -  tel -> numeros telefonicos
+        - text -> valor por defecto
+        - time -> una hora
+        - url
+        - week -> numero de la semana del año
+-->
+<body>
+    <!--<form>
+        <input>
+        <input type="button" value="Enviar input"><!--No funciona para enviar un formulario
+        <input type="submit" value="Enviar input submit"><!--Este si lo manda, por el submit
+        <button>Enviar</button><br>
+    </form>
+    input de tiempo
+    <form>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="week">
+    </form>
+    <!--input para moviles
+    <form>
+        <div> 
+            <label>Search
+                <input type="search">
+            </label>
+        </div>
+        <div>
+            <label>Telefono
+                <input type="tel">
+            </label>
+        </div>
+        <div>
+            <label>Email
+                <input type="email">
+            </label>
+        </div>
+        <div>
+            <label>Password
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label>Url
+                <input type="url">
+            </label>
+        </div>
+    </form>-->
+    <form>
+        <input type="color">
+        <input type="number">
+        <input type="range" step="5" min="0" max="20">
+        <input type="reset">
+        <input type="text">
+    </form>
+</body>
+</html>

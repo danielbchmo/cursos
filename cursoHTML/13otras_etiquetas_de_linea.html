@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Otas Etiquetas de Línea</title>
+    <style>
+        span{
+            color: red;
+        }
+   </style>
+</head>
+<!--
+    - span -> Contenedor de linea, equivalente a div, se suele usar
+    para encerrar palabras o peuqeños textos y darles estilo a través
+    de CSS o localizarlos desde javascript. No significa nada.
+
+    - q -> Equivalente a blockquote, significa quote, coloca citas pero
+    en línea.
+
+    - code -> Encierra codigos que queremos representar visualmente, suele
+    ir unido con la etiqueta "pre".
+
+    Entidades especiales en HTML - Codigo ASCII
+        https://ascii.cl/es/codigos-html.htm
+-->
+<body>
+    
+    <p>
+        Lorem ipsum dolor, <span>sit amet consectetur adipisicing elit.</span> Dolor eos nesciunt, quisquam consectetur ab vitae sapiente, possimus natus quibusdam quo architecto nihil qui deleniti corrupti aspernatur ex numquam praesentium nobis.
+    </p>
+    <q cite="">I'm your Father</q>
+
+    <pre>
+        <code> <!--Representación visual para el usuario-->
+            span{
+                color: red;
+            }
+        </code>
+    </pre>
+    <p>La etiqueta <code>&#60;h1&#62;</code> se representa para titurlos de primer nivel.</p>
+    <!--Simbolo de Copyright-->
+    <p>Copyright: &copy;</p>
+</body>
+</html>

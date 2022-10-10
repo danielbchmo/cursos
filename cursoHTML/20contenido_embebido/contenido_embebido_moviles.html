@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Embebido Moviles</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+ <!--
+    - DPR (Device Pixel Radio)
+        Relación que existe entre los pixeles reales que tiene el dispositivo
+        y los pixeles que tenemos disponibles para "pintar" contenido.
+    
+        - DPR = pixeles reales / pixeles disponibles
+-->
+<body>
+   <h1>Contenido Embebido</h1>
+   <!--<img src="assets/images/jpg.jpg" alt="Linux" width="300">
+    <img srcset="
+    /20contenido_embebido/assets/images/png.png,
+    /20contenido_embebido/assets/images/jpg-mobile.jpg 2x" alt="Portada">-->
+    
+    <picture>
+        <!--<source srcset="
+            /20contenido_embebido/assets/images/png.png,
+            /20contenido_embebido/assets/images/jpg-mobile.jpg">-->
+        <source srcset="/20contenido_embebido/assets/images/jpg-webp.webp" media="(max-witdh:1200px)">
+        <img src="assets/images/gif-webp.webp" alt="Portada">
+    </picture>
+</body>
+</html>
